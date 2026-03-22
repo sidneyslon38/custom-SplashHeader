@@ -1,4 +1,5 @@
 <script>
+    import { base } from '$app/paths';
     let {
         kicker = '',
         headline = '',
@@ -12,7 +13,7 @@
 <div class="container">
 <div class="story-header">
     <h1>{headline}</h1>
-<img class="rule" src="/curly-rule-dark.png" alt="Rule" />
+<img class="rule" src="{base}/curly-rule-dark.png" alt="Rule" />
 </div>
     <p class="deck">{deck}</p>
         <div class="byline-container">
