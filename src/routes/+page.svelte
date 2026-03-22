@@ -4,15 +4,17 @@ This is your page!
 -->
 <script>
   // Import all the news furniture components
-  import ArticleHeader from '$lib/components/ArticleHeader.svelte';
   import ArticleBody from '$lib/components/ArticleBody.svelte';
   import Image from '$lib/components/Image.svelte';
   import RelatedLinks from '$lib/components/RelatedLinks.svelte';
+  import Dashboard from '../lib/components/Dashboard.svelte';
+  import BigNumber from '../lib/components/BigNumber.svelte';
+  import SplashHeader from '../lib/components/SplashHeader.svelte';
 
   // Article metadata
-  let headline = 'Become a force for good. Join our next class.';
-  let byline = 'NYCity News Service';
-  let pubDate = '2026-01-31';
+  let headline = 'A Story About Tree Rings';
+  let byline = 'Sidney Slon';
+  let pubDate = '2026-03-22';
 
   // Related stories
   const relatedStories = [
@@ -28,23 +30,45 @@ This is your page!
   <meta name="description" content="At the Craig Newmark Graduate School of Journalism at the City University of New York, change is in our DNA. That comes of being born in 2006, as the digital revolution was transforming our profession in ways none of us could have imagined." />
 </svelte:head>
 
-<!-- Your page content goes here -->
-<div class="container">
-  
-  <!-- Article Header: Headline, byline, and publication date -->
-  <ArticleHeader
-    {headline}
-    {byline}
-    {pubDate}
-  />
 
+<!-- Your page content goes here -->
+<div class="story-theme">
+  
+  <!-- Custom article Header: Headline, byline, and publication date -->
+  <SplashHeader
+    kicker="New York City News Service"
+    headline={headline}
+    deck="This is a custom subhead for a hypothetical story about tree rings."
+    byline={byline}
+    pubDate={pubDate}
+  />
+</div>
+<div class="container story-theme">
   <!-- Lead Image: Animated gif of students at the journalism school -->
   <Image
-    src="/example-photo.gif"
+    src="/tree.png"
     alt="The Craig Newmark Graduate School of Journalism is at 219 West 40th Street in Midtown Manhattan."
     caption="The Craig Newmark Graduate School of Journalism is at 219 West 40th Street in Midtown Manhattan."
     credit="Craig Newmark Graduate School of Journalism"
   />
+
+<Dashboard>
+  <BigNumber
+    number = "100"
+    label = "Tree rings"
+    footnote = "Each ring equals approximately one year."
+  />
+    <BigNumber
+    number = "89"
+    label = "Tree Number measured"
+    footnote = "Research methodology."
+  />
+    <BigNumber
+    number = "55"
+    label = "Trees with missing rings"
+    footnote = "This strange phenomenon seems to be growing."
+  />
+</Dashboard>
 
   <!-- Article Body: The main story text with proper typography -->
   <ArticleBody>
