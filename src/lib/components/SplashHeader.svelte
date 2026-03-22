@@ -87,13 +87,6 @@
       margin-bottom: var(--spacing-xl);
     }
 
-    .rule-2 {
-      border: none;
-      border-top: var(--border-width-accent) solid var(--color-accent);
-      max-width: var(--max-width-xs);
-      margin: 0 auto var(--spacing-sm);
-    }
-
     .deck {
       text-align: left;
       font-family: var(--font-sans);
