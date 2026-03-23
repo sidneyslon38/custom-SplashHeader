@@ -41,8 +41,8 @@
       z-index: 100;
       background: linear-gradient(
       180deg,
-      var(--color-header-box) 0%,
-      transparent 40%,
+      var(--color-white) 0%,
+      var(--color-white) 97%,
       transparent 100%
     );
       margin: 0 auto;
@@ -56,8 +56,7 @@
     .byline-container {
     display: flex;
     justify-content: space-between;
-    /* Add additional styling here */
-    }  
+    }  // keeps byline and pubdate on the same line
 
     .kicker {
       text-align: left;
@@ -65,7 +64,7 @@
       font-family: var(--font-sans);
       font-size: var(--font-size-xs);
       text-transform: uppercase;
-      letter-spacing: 0.15em;
+      letter-spacing: var(--spaccing-sm);
       color: var(--color-accent);
       margin-bottom: var(--spacing-xs);
     }

@@ -10,9 +10,10 @@ This is your page!
   import Dashboard from '../lib/components/Dashboard.svelte';
   import BigNumber from '../lib/components/BigNumber.svelte';
   import SplashHeader from '../lib/components/SplashHeader.svelte';
+  import RightIcon from '../lib/components/RightIcon.svelte';
 
   // Article metadata
-  let headline = 'A Story About Tree Rings';
+  let headline = 'Newmark J Goes Green';
   let byline = 'Sidney Slon';
   let pubDate = '2026-03-22';
 
@@ -38,7 +39,7 @@ This is your page!
   <SplashHeader
     kicker="New York City News Service"
     headline={headline}
-    deck="This is a custom subhead for a hypothetical story about tree rings."
+    deck="This is a subhead."
     byline={byline}
     pubDate={pubDate}
   />
@@ -83,6 +84,11 @@ This is your page!
     <p>
       Our mission is to serve the public interest – by training new journalists from varied economic, racial, and cultural backgrounds who will bring much-needed diversity to newsrooms, by helping mid-career journalists retool their skills, and by partnering with other media organizations to find new paths to excellence.
     </p>
+
+<RightIcon
+  imgSrc="/tree-rings.png"
+  altText="tree rings png"
+/>
 
     <p>
       Our low tuition rates, along with the added backing of private donors, allow candidates for our master’s degrees in journalism and engagement journalism to receive a world-class education at an affordable price. We also offer a unique bilingual master’s in journalism for students fluent in English and Spanish.
