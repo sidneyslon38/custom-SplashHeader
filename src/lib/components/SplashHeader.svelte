@@ -32,7 +32,7 @@
   :global(.story-theme) {
     --color-accent: #3f7745;
     --color-border: #1e4524;
-    --color-header-box: #c4cdc4;
+    --color-header-box: #d1dbd1;
 
     .header-box {
       top: 0;
@@ -41,9 +41,8 @@
       z-index: 100;
       background: linear-gradient(
       180deg,
-      var(--color-white) 0%,
-      var(--color-white) 97%,
-      transparent 100%
+      var(--color-header-box) 0%,
+      var(--color-header-box) 100%,
     );
       margin: 0 auto;
     }
