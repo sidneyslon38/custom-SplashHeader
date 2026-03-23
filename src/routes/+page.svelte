@@ -4,6 +4,7 @@ This is your page!
 -->
 <script>
   // Import all the news furniture components
+  import { base } from '$app/paths';
   import ArticleBody from '$lib/components/ArticleBody.svelte';
   import Image from '$lib/components/Image.svelte';
   import RelatedLinks from '$lib/components/RelatedLinks.svelte';
@@ -86,7 +87,7 @@ This is your page!
     </p>
 
 <RightIcon
-  imgSrc="/tree-rings.png"
+  imgSrc="{base}/tree-rings.png"
   altText="tree rings png"
 />
 
