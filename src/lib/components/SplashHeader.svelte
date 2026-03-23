@@ -12,8 +12,8 @@
 <div class="header-box">
 <div class="container">
 <div class="story-header">
-    <h1>{headline}</h1>
-<img class="rule" src="{base}/curly-rule-dark.png" alt="Rule" />
+<img class="rule" src="{base}/curly-rule-dark.png" alt="Rule" />  
+  <h1>{headline}</h1>
 </div>
     <p class="deck">{deck}</p>
         <div class="byline-container">
